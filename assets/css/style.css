@@ -1,0 +1,90 @@
+body{
+    background-image: url("../images/background.png");
+}
+
+.main-container{
+    /* margin: auto; */
+    /* text-align: center; */
+    width: 400px;
+
+}
+
+.main-container h1{
+    color: white;
+    background-color: rgb(201, 99, 5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+.instructions{
+    background-color: antiquewhite;
+    color: rgb(50, 156, 1);
+    font-weight: bold;
+    padding-top: 5px;
+    padding: 5px;
+    padding-bottom: 70px;
+
+}
+
+/* section containing random number and wins/losses */
+.gameStats{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.randomNumber{
+    width: 200px;
+    margin-right: 8px;
+    background-color: rgb(97, 170, 97);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* wins & loses */
+.stats{
+    width: 65px;
+    background-color: aqua;
+    padding-left: 5px;
+}
+
+/* entire crystal section */
+.crystals{
+    margin-top: 10px;
+}
+
+.crystals img{
+    width: 80px;
+    cursor: pointer;
+}
+
+.total{
+    margin-top: 3px;
+    color: white;
+    width: 210px;
+}
+
+.total p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: rgb(43, 136, 113);
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* div containing span, only use is color */
+#score-container{
+    background-color: rgb(43, 136, 113);
+    height: 90px;
+}
+
+/* this is the SPAN with the value '0' */
+#totalScore{
+    font-size: 30px;
+    padding: 5px;
+}
