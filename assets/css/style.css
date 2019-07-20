@@ -84,7 +84,7 @@ body{
 }
 
 /* this is the SPAN with the value '0' */
-#totalScore{
+#total-score{
     font-size: 30px;
     padding: 5px;
 }
