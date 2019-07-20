@@ -4,10 +4,25 @@ $(document).ready(function(){
     let losses = 0;
     var totalScore = 0;
 
+    let redNumber = 0;
+    let blueNumber = 0;
+    let yellowNumber = 0;
+    let greenNumber = 0;
+
     function randomNumberGenerator(){
     randomNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     $("#random-number").html(randomNumber);
     console.log(randomNumber);
+    }
+
+    function updateGems(){
+        redNumber = Math.floor(Math.random() * 12) + 1;
+
+        blueNumber = Math.floor(Math.random() * 12) + 1;
+
+        yellowNumber = Math.floor(Math.random() * 12) + 1;
+
+        greenNumber = Math.floor(Math.random() * 12) + 1;
     }
 
     function updateGame(){
@@ -32,19 +47,14 @@ $(document).ready(function(){
     totalScore = 0;
 
     $("#total-score").html(totalScore);
+
     randomNumberGenerator();
+    updateGems();
 
     }
 
     randomNumberGenerator();
-
-    let redNumber = Math.floor(Math.random() * 12) + 1;
-
-    let blueNumber = Math.floor(Math.random() * 12) + 1;
-
-    let yellowNumber = Math.floor(Math.random() * 12) + 1;
-
-    let greenNumber = Math.floor(Math.random() * 12) + 1;
+    updateGems();
 
 
     $("#red-gem").on("click", function(){
@@ -76,7 +86,7 @@ $(document).ready(function(){
     $("#total-score").html(totalScore+=greenNumber);
 
     updateGame();
-    
+
     console.log("Green Number: " + greenNumber);
 
     })
